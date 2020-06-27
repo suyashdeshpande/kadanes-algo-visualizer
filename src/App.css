@@ -1,0 +1,109 @@
+/* Answer color #189438c4 */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+}
+
+.element {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 60px;
+  margin-left: 7px;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 30px;
+}
+
+.highlight {
+  background-color: #184a94ab;
+  font-weight: 500;
+  border: 1.5px solid black;
+}
+
+.answer {
+  background-color: #189438c4;
+  font-weight: 500;
+  border: 1.5px solid black;
+}
+
+.button {
+  margin-top: 30px;
+  width: 175px;
+  height: 60px;
+  background: #f3f0f1;
+  position: relative;
+  background: #f3f0f1;
+  margin-bottom: 25px;
+  border-radius: 32px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.button span {
+  line-height: 60px;
+  font-size: 1.5rem;
+  font-weight: semibold;
+}
+.button {
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(0, 0, 0, 0.2);
+  color: #091527c9;
+}
+.button:hover {
+  opacity: 0.3;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+.button:active {
+  opacity: 1;
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+    inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  color: #091527c9;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.3;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(0, 0, 0, 0.2);
+  color: #091527c9;
+}
+
+.inner-container {
+  position: relative;
+}
+
+.pointer {
+  position: absolute;
+  left: 7px;
+  text-align: center;
+  bottom: 65px;
+}
+
+img {
+  height: 3rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .element {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .pointer {
+    left: -2px;
+    bottom: 35px;
+  }
+}
